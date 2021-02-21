@@ -255,4 +255,6 @@ class Logging_Manager:
 
     def get_best_model_checkpoint_path(self, post_train_dict:dict):
         post_train_dict["best_checkpoint_path"] = self.current_best_checkpoint_path
+        print("Best checkpoint path:")
+        print(post_train_dict["best_checkpoint_path"])
 
