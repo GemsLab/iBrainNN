@@ -63,6 +63,11 @@ After training process, the interpretations will be saved at `within_regions.txt
 - The `within_regions.txt` contains the sorted most important brain regions;
 - The `across_regions.txt` contains the sorted most important region pairs.
 
+# How to check acc reported by the best checkpoint?
+We saved the best checkpoint path in the variable `post_train_dict["best_checkpoint_path"]` and printed it out.
+If you want to check the statistics of that checkpoint, you can find the best checkpoint path. The way the file is named reflects the statistics:
+{Training Acc}-{Validation Acc}-{Test Acc}-{Validation True Positive Rate}-{Validation True Negative Rate}
+
 # Need help? 
 
 Email yujunyan@umich.edu or jiongzhu@umich.edu. If your question is more related to acquisition or preprocessing of fMRI time series, you may also want to email [csripada@gmail.com](mailto:csripada@gmail.com) for faster response. 
